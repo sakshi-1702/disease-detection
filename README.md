@@ -30,24 +30,18 @@ cd disease-prediction-app
 
 ### **2. Set Up Your Environment**
 
-Create a virtual environment (optional):
+Create a virtual environment:
 
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+conda env create -f environment.yml
+conda activate disdet
 ```
 
-### **3. Install Required Packages**
-
-```bash
-pip install -r requirements.txt
-```
-
-### **4. Configure API Keys**
+### **3. Configure API Keys**
 
 Add your Google API Key to the project. You can create a `.env` file or set environment variables as necessary.
 
-### **5. Run the Application**
+### **4. Run the Application**
 
 ```bash
 python app.py
